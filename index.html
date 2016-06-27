@@ -251,7 +251,8 @@
     Add all listed people to review.<br/>
     Main reviewer will be in the middle - assign issue on him.<br/>
     3 cherries = skip QA.<br/>
-    3 beers = release immediately.
+    3 beers = release immediately.<br /><br />
+    <audio id="bgAudio" src="audio/casino.mp3" controls loop></audio>
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -261,7 +262,7 @@
     // fancy example
     $('.fancy .slot').jSlots({
         number : 3,
-        winnerNumber : 100,
+        winnerNumber : 2,
         spinner : '#play',
         easing : 'easeOutSine',
         time : 7000,
@@ -291,6 +292,8 @@
                 $("#play").click();
             }
         });
+
+        $("#bgAudio").prop('volume', 0.4);
     });
 </script>
 
